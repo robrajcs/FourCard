@@ -1,0 +1,98 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --verydarkblue: hsl(234, 12%, 34%);
+    --grayishblue: hsl(229, 6%, 66%);
+    --verylightgray: hsl(0, 0%, 98%);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    font-family: "Poppins";
+    font-weight: 400;
+    min-height: 100vh;
+    background-color: var(--verylightgray);
+    color: var(--grayishblue);
+    line-height: 2;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto;
+}
+
+.headline, section {
+    max-width: 320px;
+    text-align: center;
+    margin: 2rem auto;
+}
+section {
+    margin: 0 auto;
+    text-align: left;
+}
+
+div[class^=card-] {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 10px 3px rgba(100,100,100,.2);
+    padding: 2rem;
+    height: 30ch;
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 10%;
+}
+.card-1 {
+    border-top: 5px solid var(--cyan);
+    background-image: url('./images/icon-supervisor.svg');
+}
+.card-2 {
+    border-top: 5px solid var(--red);
+    background-image: url('./images/icon-team-builder.svg');
+}
+.card-3 {
+    border-top: 5px solid var(--orange);
+    background-image: url('./images/icon-karma.svg');
+}
+.card-4 {
+    border-top: 5px solid var(--blue);
+    background-image: url('./images/icon-calculator.svg');
+}
+
+h1 {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--verydarkblue);
+    margin-bottom: 1.5rem;
+}
+h3 {
+    color: var(--verydarkblue);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+
+@media screen and (min-width:1200px) {
+ 
+    .headline, section {
+        max-width: 600px;
+        text-align: center;
+        margin: 2rem auto;
+    }   
+    
+}
